@@ -5,7 +5,7 @@
 # Mi sitio web personal con HTML, CSS y JavaScript
 
 >[!IMPORTANT]
-> Plataformas: Navegador(Only Desktop)
+> Plataformas: Navegador(Desktop, tablet, mobile)
 
 <h1 align="center">
   amedpereda - v2
