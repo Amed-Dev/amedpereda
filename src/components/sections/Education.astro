@@ -1,5 +1,6 @@
 ---
 import EducationItem from "../EducationItem.astro";
+import SectionContainer from "../SectionContainer.astro";
 const EDUCATION = [
   {
     durationDate: "May 2023 - Presente",
@@ -20,12 +21,8 @@ const EDUCATION = [
 ];
 ---
 
-<section
-  id="educacion"
-  class="sctn-ind lg:mb-36 lg:scroll-mt-24"
-  aria-label="educacion">
-  <h2 class="text-sm uppercase font-bold text-slate-200 mb-4">Educación</h2>
+<SectionContainer id="educacion" ariaLabel="educacion" title="Educación">
   <ol class="education-list group/list">
     {EDUCATION.map((education) => <EducationItem {...education} />)}
   </ol>
-</section>
+</SectionContainer>
