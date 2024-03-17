@@ -11,7 +11,7 @@ const { description, techs, cardGridStyles } = Astro.props;
 <div
   class={`card p-2 col-span-1 row-span-1 grid place-items-center ${cardGridStyles}`}>
   <h3 class="text-rose-300 text-center">{description}</h3>
-  <TechsPills techs={techs}/>
+  <TechsPills classname="items-center justify-center" techs={techs}/>
 </div>
 
 <style>
