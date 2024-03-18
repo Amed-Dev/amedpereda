@@ -2,13 +2,17 @@
 import Layout from "../layouts/Layout.astro";
 import About from "../components/sections/About.astro";
 import Education from "../components/sections/Education.astro";
-import Proyects from "../components/sections/Proyects.astro"
+import Proyects from "../components/sections/Proyects.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="Amed Pereda">
+<Layout
+  title="Amed Pereda"
+  description="Amed Pereda es un Ingeniero de Software que crea productos y experiencias digitales innovadoras y escalables">
   <main id="content" class="pt-24 lg:w-1/2 lg:py-24">
     <About />
     <Education />
-		<Proyects />
+    <Proyects />
+    <Footer />
   </main>
 </Layout>
