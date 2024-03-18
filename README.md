@@ -2,7 +2,7 @@
   <img alt="Logo" src="./public/favicon.png" width="64" />
 </div>
 
-# Mi sitio web personal con HTML, CSS y JavaScript
+# Mi sitio web personal con Astro y Tailwind css
 
 >[!IMPORTANT]
 > Plataformas: Navegador(Desktop, tablet, mobile)
