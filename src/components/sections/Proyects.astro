@@ -8,12 +8,14 @@ const PROYECTS = [
     infoProyect: ["Encriptador de texto", "Alura"],
     description: "Una encriptador de texto con requisitos básicos y responsive",
     img: "/p-e-t-a.png",
+    linkDemo: "https://amed-dev.github.io/Encriptador-de-texto/",
     techs: ["HTML", "CSS", "JavaScrcipt"],
   },
   {
     infoProyect: ["Landing page", "Juguería Flory"],
     description: "Una landing page diseñado para un negocio de comida en 2022",
     img: "/l-p-j-f.png",
+    linkDemo: "https://jugueria-flory.github.io/web-site/",
     techs: ["HTML", "CSS", "JavaScrcipt"],
   },
 ];
@@ -30,7 +32,7 @@ const PROYECTS = [
               <h3>
                 <a
                   class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                  href="https://jugueria-flory.github.io/web-site/"
+                  href={proyect.linkDemo}
                   target="_blank"
                   rel="noreferrer"
                   aria-label="amedpereda.com (v2)">
@@ -47,7 +49,7 @@ const PROYECTS = [
               <p class="mt-2 text-sm leading-normal">{proyect.description}</p>
               <a
                 class="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
-                href="https://jugueria-flory.github.io/web-site/"
+                href={proyect.linkDemo}
                 target="_blank"
                 rel="noreferrer"
                 aria-label="6779 stars on GitHub"
