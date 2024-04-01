@@ -1,14 +1,14 @@
 <li class="mr-5">
   <a
-    class="
-    block 
+    class="block
     transition-all ease-in-out
     hover:scale-110
-    hover:text-slate-200
-    "
-    {...Astro.props}
+    hover:text-slate-200"
+    href=`${Astro.props.href}`
     target="_blank"
-    rel="noopener noreferrer">
+    rel="noopener noreferrer"
+    aria-label=`${Astro.props.title} (opens in a new tab)`
+    title=`${Astro.props.title}`>
     <slot />
   </a>
 </li>

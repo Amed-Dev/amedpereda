@@ -1,7 +1,7 @@
 ---
 import Github from "../icons/Github.astro";
 import Mail from "../icons/Mail.astro";
-import LinkdIn from "../icons/LinkedIn.astro";
+import LinkedIn from "../icons/LinkedIn.astro";
 import CodePen from "../icons/CodePen.astro";
 import SocialPill from "../SocialPill.astro";
 const navItems = [
@@ -60,18 +60,22 @@ const navItems = [
   </div>
 
   <ul class="ml-1 mt-8 flex items-center" aria-label="Redes sociales">
-    <SocialPill href="mailto:intiprda@gmail.com">
+    <SocialPill href="mailto:intiprda@gmail.com"
+    title="Mail">
       <Mail class="size-6" />
     </SocialPill>
-    <SocialPill href="https://codepen.io/Amedboydeveloper/">
+    <SocialPill href="https://codepen.io/Amedboydeveloper/"
+    title="CodePen">
       <CodePen class="size-6" />
     </SocialPill>
-    <SocialPill href="https://github.com/Amed-Dev">
+    <SocialPill href="https://github.com/Amed-Dev"
+    title="GitHub">
       <Github class="size-6" />
     </SocialPill>
     <SocialPill
-      href="https://www.linkedin.com/in/amed-inti-pereda-gomez-2214a1298/">
-      <LinkdIn class="size-6" />
+      href="https://www.linkedin.com/in/amed-inti-pereda-gomez-2214a1298/"
+      title="LinkedIn">
+      <LinkedIn class="size-6" />
     </SocialPill>
   </ul>
 </header>
