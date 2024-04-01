@@ -1,13 +1,19 @@
 ---
 import SectionContainer from "../SectionContainer.astro";
 import Card from "../Card.astro";
+import { Image } from "astro:assets";
 ---
 
 <SectionContainer id="sobre-mi" ariaLabel="About me" title="Sobre mi">
   <div>
-    <div class="img-box">
-      <img src="/profile.jpeg" alt="Amed Pereda" />
-    </div>
+    <Image
+      src="/profile.jpeg"
+      alt="Amed Pereda"
+      width="200"
+      height="200"
+      loading="eager"
+      class="shadow-[0px_0px_2px_2px_#f4ddb1] relative flex items-center overflow-hidden size-[200px] mx-auto my-6 rounded-[50%] aspect-square p-1 ring-1 ring-[#fde68a]/80"
+    />
     <p class="mb-4">
       En 2019, decidí intentar crear una página personalizada, ví algunos
       tutoriales de YouTube y caí de cabeza en la madriguera de la codificación
