@@ -2,12 +2,14 @@
 import Arrow from "./icons/Arrow.astro";
 interface Props {
   durationDate: string;
+  certificationURL: string;
   degreeInfo: string[];
   rank: string;
   description: string;
   techs: string[];
 }
-const { durationDate, description, rank, degreeInfo, techs } = Astro.props;
+const { durationDate, certificationURL, description, rank, degreeInfo, techs } =
+  Astro.props;
 ---
 
 <li class="mb-12 p-4 transition-all">
@@ -25,9 +27,11 @@ const { durationDate, description, rank, degreeInfo, techs } = Astro.props;
         <div>
           <a
             class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-            href="https://app.aluracursos.com/program/certificate/5813460d-de2c-4bb0-a002-9194ea48581e"
-            target="_blank"
-            rel="noreferrer">
+            href={certificationURL ? certificationURL : undefined}
+            target={certificationURL ? "_blank" : undefined}
+            rel="noreferrer"
+            aria-disabled={!certificationURL}
+            style={{ cursor: certificationURL ? "pointer" : "default" }}>
             <span
               class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
             ></span>
@@ -35,7 +39,6 @@ const { durationDate, description, rank, degreeInfo, techs } = Astro.props;
               {degreeInfo[0]} ·
               <span class="inline-block">
                 {degreeInfo[1]}
-
                 <Arrow />
               </span>
             </span>
